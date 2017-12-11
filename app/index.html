@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title><---DevLayouts</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css"/>
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+<!--Top Arrow start-->
+<a href="javascript:" id="return-to-top" style="display: inline;">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!--Top Arrow end-->
+
+<div id="my-header">
+
+</div>
+<div id="my-content" class="main-page">
+
+</div>
+
+<div id="my-footer">
+
+</div>
+
+
+<!--Modal for all pages start-->
+<div data-fancybox="" data-src="#consult">
+	<div id="consult" class="" style="display: none">
+		<div class="container ">
+			<div class="row">
+				<div class="col-12 ">
+					<!--start callback_form-->
+					<p>
+						<b>Привет, Мы Marketminer!</b> <br>
+						Мы здесь что бы помочь Вам с реализацией и развитием Вашего проекта! Оставьте свои контактные данные и мы свяжемся с вами.
+					</p>
+					<form >
+						<input type="hidden" name="theme" value="Заявка на обратный звонок на странице Главная">
+						<label for="name">Как вас зовут?</label>
+						<input type="text" id="name" name="name">
+
+						<label for="phone">Ваш контактный номер?</label>
+						<input type="tel" id="phone" name="phone">
+
+						<label for="callDate">Удобное дата и время для звонка (по Москве)</label>
+						<input type="text" id="callDate" name="callDate" class="datepick">
+
+						<label for="callDate">Ваш контактный E-mail</label>
+						<input type="email" name="email">
+
+						<p style="font-size: 12px">
+							Нажимая "Отправить", Я подтверждаю, что ознакомлен с <a href="" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку своих персональных данных.
+						</p>
+						<button type="" name="callback_form" class="btn-accent" value="Заказать">Отправить</button>
+					</form>
+					<!--start callback_form-->
+				</div>
+			</div>
+		</div>
+		<div class="client-msg-cont">
+			<p id="err-sale-msg2" class="client-msg" style="color: red">Введите корректные данные</p>
+			<p id="err-order-msg2" class="client-msg" style="color: red">Согласитесь с политикой конфиденциальности и примите пользовательское соглашение</p>
+		</div>
+	</div>
+</div>
+<!--Modal for all pages end-->
+
+<!--For all pages START-->
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<!--For all pages END-->
+<!--For this pages START-->
+
+<!--For this pages END-->
+
+<script>
+	/*For this page START*/
+
+	/*For this page END*/
+
+	/*For all pages START*/
+	$(function() {
+		$('input[type="tel"]').mask("+7 (999) 999-9999");
+
+		/*Открытие подменю на мобильной версии в шапке сайта*/
+		$('.headSubmOpen').on('click', function () {
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');
+				$('.js-headSubm').slideUp();
+			}
+			else {
+				$(this).addClass('active');
+				$('.js-headSubm').slideDown();
+			}
+		});
+
+		$(window).resize(function () {
+//			$('.headSubmOpen').addClass('active');
+//			$('.js-headSubm').slideDown();
+		});
+
+	});
+	/*For all pages END*/
+</script>
+
+</body>
+</html>
