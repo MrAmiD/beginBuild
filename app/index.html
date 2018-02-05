@@ -40,6 +40,44 @@
 <!--Top Arrow end-->
 
 <div id="my-header">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="menu-m-b hidden-lg-only">
+					<a href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
+		          <span class="hamburger-box">
+		              <span class="hamburger-inner"></span>
+		          </span>
+					</a>
+					<nav id="my-menu">
+					</nav>
+				</div>
+			</div>
+			<div class="col hidden-md-down">
+				<div class="main-menu">
+					<ul>
+						<li data-trigger="#vaka" ><a href="javascript:void(0)">
+							Вакансии
+						</a></li>
+						<li data-trigger="#slider-object"><a href="javascript:void(0)">
+							Объекты строительства
+						</a></li>
+						<li data-trigger="#about-company"><a href="javascript:void(0)">
+							О компании
+						</a>
+						</li>
+						<li data-trigger="#employer"><a href="javascript:void(0)">
+							Гарантии
+						</a></li>
+						<li data-trigger="#feedback"><a href="javascript:void(0)">
+							Отзывы
+						</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 <div id="my-content" class="main-page">
@@ -58,7 +96,55 @@
 			<div class="col">col1</div>
 			<div class="col">col1</div>
 		</div>
+		<div class="row">
+			<div class="col content">
+				<div class="h1">
+					AIR DATEPICKER
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<input type='text' data-timepicker="true" class="datepicker-here" data-position="right top" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="h1">Slick Slider</div>
+			</div>
+			<div class="col-12">
+				<div class="main-slider">
+					<div class="item">
+						<div class="prev" style="background-image: url('img/slider.jpg')">
+						</div>
+						<div class="content-c">
+							Мостовой переход через <br>
+							реку Чусовую в Перми
+						</div>
+					</div>
+					<div class="item">
+						<div class="prev" style="background-image: url('img/slider2.jpg')">
+						</div>
+						<div class="content-c">
+							Мостовой переход через <br>
+							реку Чусовую в Перми
+						</div>
+					</div>
+					<div class="item">
+						<div class="prev" style="background-image: url('img/slider3.jpg')">
+						</div>
+						<div class="content-c">
+							Мостовой переход через <br>
+							реку Чусовую в Перми
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
+
 </div>
 
 <div id="my-footer">
@@ -119,7 +205,7 @@
 
 <script>
 	/*For this page START*/
-
+	MainSliderInit();
 	/*For this page END*/
 
 	/*For all pages START*/
