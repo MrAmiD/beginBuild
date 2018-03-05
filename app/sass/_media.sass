@@ -2,14 +2,16 @@
 
 /*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
   /**/
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
   /**/
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
   .content
     table
       overflow-x: scroll
@@ -19,35 +21,35 @@
         display: block
         min-width: 500px
         width: 100%
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 576px)
+//Small: ≥576px
++media-breakpoint-down(sm)
   /**/
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+//Extra small: >0
++media-breakpoint-down(xs)
 	/**/
 
 
 /*==========  Mobile First  ==========*/
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
+//Extra small: <576px
++media-breakpoint-up(xs)
 	/**/
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
+//Small: ≤576px
++media-breakpoint-up(sm)
 	/**/
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+//Medium: ≤768px
++media-breakpoint-up(md)
   /**/
 
 
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
+//Large: ≤992px
++media-breakpoint-up(lg)
   /**/
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
   .container
     width: 1170px
     max-width: 100%
