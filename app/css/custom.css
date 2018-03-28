@@ -1,0 +1,58 @@
+/*После всех изменений прогонять через https://autoprefixer.github.io/ru/*/
+
+/*Новые стили писать ЗДЕСЬ, ПЕРЕД МЕДИА ЗАПРОСАМИ*/
+
+
+
+
+
+
+
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px){
+
+}
+
+/*==========  Mobile First  ==========*/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px){
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}
+
+/*
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ДАЖЕ НЕ СМОТРИ СЮДА, ВСЕ СТИЛИ ПЕРЕД МЕДИА ЗАПРОСАМИ
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
