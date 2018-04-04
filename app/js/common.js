@@ -176,7 +176,7 @@ $(function() {
         $("#my-header").css({ top: $(window).scrollTop() });
     });
     api.bind( "open:before", function() {
-        $('#my-menu').css('top', $('#my-header').height()+6);
+        $('#my-menu').css('top', $('#my-header').outerHeight());
     });
     api.bind( "close:finish", function() {
         $("#menu-btn").removeClass('is-active');
