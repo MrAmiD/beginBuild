@@ -164,7 +164,7 @@ $(function() {
 
     api.bind( "open:finish", function() {
         $("#menu-btn").addClass('is-active');
-        $(".mm-menu.mm-offcanvas.mm-bottom").css('height', $(window).height() - $('#my-header').height());
+
 
         //bugfix fixed menu 1-3 START
         $(window).scroll();
@@ -172,11 +172,12 @@ $(function() {
     });
     api.bind( "open:start", function() {
         $(window).scroll();
+        $(".mm-menu.mm-offcanvas.mm-bottom").css('height', $(window).height() - $('#my-header').height() + $(window).scrollTop());
         //bugfix fixed menu 2
         $("#my-header").css({ top: $(window).scrollTop() });
     });
     api.bind( "open:before", function() {
-        $('#my-menu').css('top', $('#my-header').outerHeight());
+        $('#my-menu').css('top', $('#my-header').outerHeight() - $(window).scrollTop());
     });
     api.bind( "close:finish", function() {
         $("#menu-btn").removeClass('is-active');
