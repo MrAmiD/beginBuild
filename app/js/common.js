@@ -164,8 +164,6 @@ $(function() {
 
     api.bind( "open:finish", function() {
         $("#menu-btn").addClass('is-active');
-
-
         //bugfix fixed menu 1-3 START
         $(window).scroll();
         $("#my-header").css({ top: $(window).scrollTop()});
